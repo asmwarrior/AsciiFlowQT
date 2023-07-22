@@ -34,8 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++20" />
 			<Add option="`$(#WX_CONFIG) --cflags`" />
-			<Add directory="src/Common/include" />
-			<Add directory="F:/code/AsciiFlowQT/src/Common/include" />
+			<Add directory="$(PROJECT_DIR)src/Common/include" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add option="`$(#WX_CONFIG) --rcflags`" />
