@@ -14,7 +14,7 @@ class wxAsciiArt : public wxScrolledWindow
 {
 public:
 	static constexpr int CELLSIZE = 12;
-	static constexpr int FONTSIZE = CELLSIZE - 4;
+	static constexpr int FONTSIZE = CELLSIZE;
 
 	wxAsciiArt();
 	wxAsciiArt(wxWindow *parent);
