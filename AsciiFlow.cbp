@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AsciiFlow" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AsciiFlow" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AsciiFlow" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++20" />
+			<Add option="`$(#WX_CONFIG) --cflags`" />
+			<Add directory="src/Common/include" />
+			<Add directory="F:/code/AsciiFlowQT/src/Common/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add option="`$(#WX_CONFIG) --rcflags`" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="`$(#WX_CONFIG) --libs`" />
+		</Linker>
+		<Unit filename="src/Common/AsciiArtData.cpp" />
+		<Unit filename="src/Common/IsPrint.cpp" />
+		<Unit filename="src/Common/Point.cpp" />
+		<Unit filename="src/Common/Rect.cpp" />
+		<Unit filename="src/Common/ToolArrow.cpp" />
+		<Unit filename="src/Common/ToolClass.cpp" />
+		<Unit filename="src/Common/ToolErase.cpp" />
+		<Unit filename="src/Common/ToolFreehand.cpp" />
+		<Unit filename="src/Common/ToolLine.cpp" />
+		<Unit filename="src/Common/ToolMove.cpp" />
+		<Unit filename="src/Common/ToolRectangle.cpp" />
+		<Unit filename="src/Common/ToolResize.cpp" />
+		<Unit filename="src/Common/ToolText.cpp" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/AsciiArtData.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/AsciiFlowCommonAPI.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ITool.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/IsPrint.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/KeyEvent.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/Point.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/Rect.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolArrow.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolClass.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolErase.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolFreehand.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolLine.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolMove.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolRectangle.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolResize.h" />
+		<Unit filename="src/Common/include/AsciiFlowCommon/ToolText.h" />
+		<Unit filename="src/Wx/AboutDialog.cpp" />
+		<Unit filename="src/Wx/AboutDialog.h" />
+		<Unit filename="src/Wx/App.cpp" />
+		<Unit filename="src/Wx/App.h" />
+		<Unit filename="src/Wx/ExportDialog.cpp" />
+		<Unit filename="src/Wx/ExportDialog.h" />
+		<Unit filename="src/Wx/ImportDialog.cpp" />
+		<Unit filename="src/Wx/ImportDialog.h" />
+		<Unit filename="src/Wx/MainFrame.cpp" />
+		<Unit filename="src/Wx/MainFrame.h" />
+		<Unit filename="src/Wx/PreferencesDialog.cpp" />
+		<Unit filename="src/Wx/PreferencesDialog.h" />
+		<Unit filename="src/Wx/main.cpp" />
+		<Unit filename="src/Wx/wxAsciiArt.cpp" />
+		<Unit filename="src/Wx/wxAsciiArt.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
